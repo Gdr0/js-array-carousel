@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.previus {
+.previous {
   position: absolute;
   left: 50%;
   transform: translate(-50%,-2%);
@@ -48,6 +48,9 @@
 }
 .active {
   display: block;
+}
+.hidden{
+    display: none;
 }
 
 img {

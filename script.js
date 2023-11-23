@@ -18,17 +18,22 @@ next.addEventListener("click", function () {
     previous.classList.remove("hidden");
   }
 });
-
+// CREO IL COMANDO PER SCORRERE AL CONTRARIO
 const previous = document.querySelector(".previous");
 previous.addEventListener("click", function () {
+  // RIMUOVO ACTIVE
   if (activeItem < items.length) {
     items[activeItem].classList.remove("active");
+    //ABBASSO L'INDICE DELL'ELEMENTO VISUALIZZATO
     activeItem--;
+    // AGGIUNGO ACTIVE ALL'ELEMENTO
     items[activeItem].classList.add("active");
   }
+  //   AGGIUNGO ACTIVE AGLI ELEMNTI QUANDO MI MUOVO VERSO IL BASSO
   if (activeItem < items.length - 1) {
     next.classList.remove("hidden");
   }
+  //   NASCONDO IL PULSANTE AL PRIMO ELEMENTO
   if (activeItem === 0) {
     previous.classList.add("hidden");
   }
