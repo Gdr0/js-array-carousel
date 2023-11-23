@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.slider {
+  width: 300px;
+}
+
+.item {
+  display: none;
+  overflow: hidden;
+}
+.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
